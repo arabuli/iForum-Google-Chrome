@@ -1,0 +1,20 @@
+﻿{
+"update_url":"http://clients2.google.com/service/update2/crx",
+	"name": "iForum",
+	"version": "2.5.0",
+	"icons": {
+		"16":"images/icon.gif",
+		"32":"images/icon_32.gif",
+		"48":"images/icon_48.gif",
+		"128": "images/icon_128.gif"
+	},
+	"description": "გაფართოება Forum.ge-ს მომხმარებლებისთვის",
+	
+	"content_scripts": [{
+		"matches": ["http://*.forum.ge/*"],
+		"js": ["content/toolbar.js"],
+		"all_frames":false,
+		"run_at":"document_end"
+	}]
+	
+}
